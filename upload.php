@@ -22,7 +22,7 @@ if(isset($_FILES['file'])) {
 
                 $file_destination = "uploads/" . $file_name ;
                 if(move_uploaded_file($file_tmp, $file_destination)) {
-                    echo $file_destination;
+                    echo "Failas sėkmingai įkeltas į šią direktoriją: " . $file_destination;
                 }
             }
         }
